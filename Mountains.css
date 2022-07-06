@@ -18,6 +18,14 @@ body {
     margin: 0 auto;
 }
 
+.head {
+    color: #f79918;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
 li {
     list-style: none;
 }
@@ -32,6 +40,31 @@ a {
 
 .mt-4 {
     margin-top: 10px;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2.2rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.pt-5 {
+    margin-top: 60px;
+}
+
+.col-whi-op {
+    color: rgba(255, 255, 255, 0.5);
+
 }
 
 .topsection {
@@ -57,9 +90,14 @@ button {
     border: 2px solid transparent;
     border-radius: 30px;
     color: white;
+    cursor: pointer;
     font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .1rem;
     text-transform: uppercase;
 }
+
+
 
 button:hover {
     background-color: white;
@@ -78,21 +116,37 @@ img {
     background-size: cover;
     height: 100vh;
     width: 100%;
+    color: whitesmoke;
+}
 
+.maountain-Cover::before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, .3);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
 
 header {
-    padding: 40px 0px;
+    padding-top: 20px;
 }
 
 .logo {
     float: left;
     font-size: 20px;
-    color: white;
+    font-weight: 700;
+    top: 6px;
+    position: relative;
+    color: white !important;
 }
 
 .navbar {
     float: right;
+    position: relative;
+    top: 6px;
+
 }
 
 .navbar ul {
@@ -109,8 +163,26 @@ header {
     display: none;
 }
 
+.dropdown ul li a{
+    color:black;
+}
+
+.fs {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
 .dropdown ul li i {
     margin-left: 15px;
+}
+
+.dropdown ul li {
+    padding-top: 10px;
+}
+
+.dropdown ul li a:hover {
+    color: #f79918;
 }
 
 .drop-dis:hover .dropdown {
@@ -119,6 +191,10 @@ header {
 
 .drop-subdis:hover .sub-dropdown {
     display: block;
+}
+
+.drop-subdis i:hover {
+    color: #f79918;
 }
 
 .navbar ul li {
@@ -157,44 +233,51 @@ header {
 }
 
 .banner {
+    position: relative;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
     padding: 25px 0px;
-    height: 70vh;
-    color: white;
+    color: rgba(255, 255, 255, 1)
 }
 
 .banner-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 33.33%;
+    margin-top: 130px;
 }
 
-div.banner-left>*,
-.main-left>* {
-    padding: 5px 0px;
-    margin: 5px 0px;
+.banner-left>div>span {
+    margin-bottom: 30px;
+}
+
+.banner-left>div>h1,
+.main-left>div {
+    margin-bottom: 1.2rem;
+}
+
+.banner-left>div p {
+    margin-bottom: 3rem;
+}
+
+.banner-left>div>span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 12px;
 }
 
 .banner-heading {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 700;
-}
-
-.para {
-    width: 70%;
-}
-
-.para2 {
-    width: 60%;
+    line-height: 1.3;
 }
 
 .banner-right {
+    margin-top: 101px;
     width: 50%;
-    padding: 55px 0px 30px 120px;
+    padding: 0px 0px 0px 120px;
     position: relative;
 }
 
@@ -202,7 +285,7 @@ div.banner-left>*,
     border: 1px solid rgba(255, 255, 255, 0.4);
     position: absolute;
     top: 40%;
-    left: 50%;
+    left: 55%;
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -218,7 +301,7 @@ div.banner-left>*,
 .main {
     display: grid;
     grid-template-columns: 2fr 1fr 3fr;
-    padding: 15px 0px;
+    padding: 32px 0px;
 }
 
 .main-left {
@@ -226,24 +309,32 @@ div.banner-left>*,
     flex-direction: column;
 }
 
-.main-left button {
-    width: 50%;
+.main-left div button {
+    padding: 14px 18px;
+}
+
+.main-right {
+    padding-left: 10px;
 }
 
 /* section-3 */
+.content {
+    padding-bottom: 55px;
+}
+
 .content-top {
     text-align: center;
-    padding: 15px 0px;
 }
 
 .content-bottom {
+    margin-top: 38px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 35px;
 }
 
 .content-card {
-    padding: 20px 0;
+    padding: 26px 0 0 15px;
 }
 
 .cardone {
@@ -271,7 +362,7 @@ article {
 }
 
 .article-two {
-    padding: 25px 15px 0px 15px;
+    padding: 30px 15px 0px 15px;
 }
 
 .article-three {
@@ -306,11 +397,13 @@ article {
 }
 
 .artiacl-button {
-    padding: 15px 0;
+    padding: 35px 0;
 }
+
 
 .artiacl-button button {
     padding: 12px 7px;
+    width: 100%;
 }
 
 /*section-5 */
@@ -363,30 +456,36 @@ blockquote {
     background-color: white;
     text-align: center;
     padding-top: 55px;
-    margin: 30px 25px;
+    margin: 30px 45px;
     position: absolute;
 }
 
 .service-desc {
     display: flex;
     justify-content: space-around;
-    padding: 45px 0px;
-    margin-bottom: 35px;
+    padding: 60px 0px;
+    margin-bottom: 5px;
 }
 
 .service-desc div {
-    margin: 0px 20px;
+    margin: 25px 20px;
     padding: 10px 25px;
 }
 
+
 .more {
     color: #f79918;
-    margin-top: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.more:hover {
+    color: #8b560b;
 }
 
 /*  section-7 */
 .joinus {
-    margin-top: 32rem;
+    margin-top: 41rem;
     background-color: #10495c;
     height: 300px;
 }
@@ -399,7 +498,7 @@ blockquote {
 }
 
 .joinus div div button {
-    padding: 12px 35px;
+    padding: 1rem 3rem;
 
 }
 
@@ -411,7 +510,7 @@ footer {
 .footer-sec {
     display: flex;
     justify-content: space-between;
-    padding: 45px 0px;
+    padding: 70px 0px;
 }
 
 .footer-sec div {
@@ -477,12 +576,12 @@ address {
     color: #888;
 }
 
-.social-icon li:hover {
-    background-color: #f79918;
+.social-icon li:hover .abc {
+    color: white;
 }
 
-.social-icon li a:hover {
-    color: white;
+.social-icon li:hover {
+    background-color: #f79918;
 }
 
 .footer-last i {
